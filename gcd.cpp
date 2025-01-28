@@ -13,8 +13,16 @@ int findGCD(int a, int b){
   return a + b;
 }
 
+int findLCM(int a, int b){
+  return (a * b) / findGCD(a, b);
+}
+
 int main(){
 std::cout << findGCD(2, 2);
 std::cout << findGCD(6, 9);
 std::cout << findGCD(7, 2);
+
+std::cout << findLCM(2, 2);
+std::cout << findLCM(6, 9);
+std::cout << findLCM(7, 2);
 }
